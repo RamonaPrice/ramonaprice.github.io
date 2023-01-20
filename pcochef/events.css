@@ -1,5 +1,15 @@
+/*************************************
+Custom Code
+*/
 
 
+div#main_page_content.page-content.f-1 div.card-list-item__image img {
+    border-radius: 0px;
+}
+
+div.card-list-item__content {
+    margin-top:10px !important;
+}
 
 /*************************************
 c-events.css
