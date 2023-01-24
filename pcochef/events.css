@@ -11,6 +11,26 @@ div.card-list-item__content {
     margin-top:10px !important;
 }
 
+a.eventitem-backlink {
+  color: #33589e;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+a.eventitem-backlink:before {
+  content: "&lt; " !important;
+  display: inline-block;
+  margin-right: 0.25em;
+  width: 1em;
+}
+
+div#main_page_content {
+  text-align: left !important;
+}
+
 /*************************************
 c-events.css
 */
