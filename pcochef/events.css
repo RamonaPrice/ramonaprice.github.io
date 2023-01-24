@@ -2,7 +2,7 @@
 Custom Code
 */
 
-.chef-events-collection-item {
+.chef-events-collection-item > *{
   font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -124,7 +124,7 @@ background: #eee;
 .chef-events-collection-item.events.events-item {
 box-sizing: border-box;
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -153,7 +153,7 @@ background-size: auto;
 color: inherit;
 cursor: pointer;
 display: inline-block;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -186,7 +186,7 @@ align-content: flex-start;
 color: #000000;
 display: flex;
 flex-direction: row;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 justify-content: flex-start;
 letter-spacing: .176px;
@@ -204,7 +204,7 @@ div.eventitem-column-meta {
 box-sizing: border-box;
 color: #000000;
 flex: 1 0 30%;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -220,7 +220,7 @@ width: 100%;
 
 h1.eventitem-title {
 color: #002D73;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 28px;
 font-style: normal;
 font-weight: 400;
@@ -240,7 +240,7 @@ margin-bottom: 17px;
 
 ul.eventitem-meta.event-meta.event-meta-date-time-container {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -252,7 +252,7 @@ padding: 0;
 
 li.eventitem-meta-item.eventitem-meta-date.event-meta-item {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: .9em;
 letter-spacing: .176px;
 line-height: 1.6em;
@@ -264,7 +264,7 @@ text-align: left;
 
 time.event-date {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -274,7 +274,7 @@ text-align: left;
 
 li.eventitem-meta-item.eventitem-meta-time.event-meta-item {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: .9em;
 letter-spacing: .176px;
 line-height: 1.6em;
@@ -286,7 +286,7 @@ text-align: left;
 
 span.event-time-localized {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -296,7 +296,7 @@ text-align: left;
 
 time.event-time-localized-start {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -306,7 +306,7 @@ text-align: left;
 
 span.event-datetime-divider {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -320,7 +320,7 @@ content: " â€“";
 
 time.event-time-localized-end {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -330,7 +330,7 @@ text-align: left;
 
 ul.eventitem-meta.event-meta.event-meta-addtocalendar-container {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -342,7 +342,7 @@ padding: 0;
 
 li.eventitem-meta-item.eventitem-meta-export.event-meta-item {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: .9em;
 letter-spacing: .176px;
 line-height: 1.6em;
@@ -363,7 +363,7 @@ background-repeat: repeat;
 background-size: auto;
 color: inherit;
 cursor: pointer;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -386,7 +386,7 @@ outline: 0 none currentcolor;
 
 span.eventitem-meta-export-divider {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -410,7 +410,7 @@ background-repeat: repeat;
 background-size: auto;
 color: inherit;
 cursor: pointer;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 15.84px;
 letter-spacing: .176px;
 line-height: 25.35px;
@@ -435,7 +435,7 @@ outline: 0 none currentcolor;
 box-sizing: border-box;
 color: #000000;
 flex: 1 0 70%;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -452,7 +452,7 @@ width: 100%;
 
 .chef-layout.chef-grid-12.columns-12 {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -460,7 +460,7 @@ line-height: 28.1667px;
 
 .row.chef-row {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -483,7 +483,7 @@ display: table;
 .col.chef-col-12.span-12 {
 color: #000000;
 float: left;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -503,7 +503,7 @@ padding-right: 0;
 
 .chef-block.image-block.chef-block-image.chef-text-ready {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 height: auto;
 letter-spacing: .176px;
@@ -534,7 +534,7 @@ padding-bottom: 17px;
 
 .chef-block-content {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -542,7 +542,7 @@ line-height: 28.1667px;
 
 .image-block-outer-wrapper.layout-caption-hidden.design-layout-inline.combination-animation-site-default.individual-animation-site-default.individual-text-animation-site-default.animation-loaded {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -552,7 +552,7 @@ transform: translateZ(0);
 figure#yui_3_17_2_1_1657311990267_67.chef-block-image-figure.intrinsic {
 color: #000000;
 display: block;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -562,7 +562,7 @@ max-width: 3500px;
 
 .image-block-wrapper {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -583,7 +583,7 @@ top: 0;
 
 .chef-image-shape-container-element.has-aspect-ratio {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -594,7 +594,7 @@ position: relative;
 
 .chef-events-collection-item.events.events-item .chef-image-shape-container-element.has-aspect-ratio noscript {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -605,7 +605,7 @@ border: 0 none currentcolor;
 border-image: none 100% 1 0 stretch;
 color: #000000;
 cursor: default;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 height: 100%;
 left: -.00714388%;
@@ -623,7 +623,7 @@ visibility: hidden;
 .chef-block.html-block.chef-block-html {
 clear: none;
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 height: auto;
 letter-spacing: .176px;
@@ -646,7 +646,7 @@ padding-bottom: 17px;
 
 div.chef-block-content {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -659,7 +659,7 @@ overflow-wrap: break-word;
 
 .chef-events-collection-item.events.events-item div.chef-block-content p {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -677,7 +677,7 @@ margin-bottom: 0;
 
 div.eventitem-content-footer {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
@@ -686,7 +686,7 @@ margin: 17px 0 0;
 
 div.clear {
 color: #000000;
-font-family: adobe-caslon-pro;
+font-family: 'Montserrat', sans-serif;
 font-size: 17.6px;
 letter-spacing: .176px;
 line-height: 28.1667px;
