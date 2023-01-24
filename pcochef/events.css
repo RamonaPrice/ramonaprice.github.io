@@ -2,6 +2,9 @@
 Custom Code
 */
 
+.chef-events-collection-item {
+  font-family: 'Montserrat', sans-serif !important;
+}
 
 div#main_page_content.page-content.f-1 div.card-list-item__image img {
     border-radius: 0px !important;
@@ -21,13 +24,15 @@ a.eventitem-backlink {
 }
 
 a.eventitem-backlink:before {
-  content: "< " !important;
-  display: inline-block;
-  margin-right: 0.25em;
-  width: 1em;
+  content: "< "!important;
+  width: auto !important;
 }
 
-div#main_page_content {
+span.event-datetime-divider:before {
+  content: "-" !important;
+}
+
+.eventitem {
   text-align: left !important;
 }
 
