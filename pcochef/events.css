@@ -36,8 +36,16 @@ span.event-datetime-divider:before {
   text-align: left !important;
 }
 
-time.event-date, .eventitem-meta-address-line {
+time.event-date, .eventitem-meta-address-line, .eventitem-meta-address-maplink {
   font-size:15px !important;
+}
+
+a.register-btn {
+  background-color:#666666 !important;
+}
+
+.eventitem-title {
+  color:#000 !important;
 }
 
 /*************************************

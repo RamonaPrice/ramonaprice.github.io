@@ -1,3 +1,11 @@
+/*************************************
+ * events.js
+ * Author: Caleb
+ * Organization: NLCC
+ * Comments: Need to add a function to strip &tags=... within hx-ext.
+ * 
+ */
+
 (function($, window, document) {
 window.custom_events_app = {
     observer: null,
@@ -37,7 +45,13 @@ window.custom_events_app = {
                     var url_base = $(target).attr("hx-openurl");
                     if(!url_base) console.log("No 'hx-openurl' attribute set.");
                     var query = this.href.substring(this.href.indexOf("?"));
-                    this.href = url_base +query;
+                    if(!$(target).attr("hx-keeptags")) {
+                        // Removes &tags=... on new URL
+                        // To prevent this, add the attribute hx-keeptags
+                        const tags_query = /tags=([^&]*)/g;
+                        query = query.replace(tags_query, ""); 
+                    }
+                    this.href = url_base + query;
                 });
                 $(target).html(fragment);
             }
