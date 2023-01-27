@@ -19,25 +19,25 @@ var app = {
         $("body").on("htmx:load", function(){
             console.log("HTMX:load");
             console.log(this);
-            console.log(elem);
+            console.log(document.querySelector("[hx-openurl]"));
         });
 
         $("body").on("htmx:afterSwap", function(){
             console.log("HTMX:load");
             console.log(this);
-            console.log(elem);
+            console.log(document.querySelector("[hx-openurl]"));
         });
 
         $("*").on("htmx:load", function(){
             console.log("ALL HTMX:load");
             console.log(this);
-            console.log(elem);
+            console.log(document.querySelector("[hx-openurl]"));
         });
 
         $("*").on("htmx:afterSwap", function(){
             console.log("ALL HTMX:swap");
             console.log(this);
-            console.log(elem);
+            console.log(document.querySelector("[hx-openurl]"));
         });
     },
     change_links: function(elem) {
