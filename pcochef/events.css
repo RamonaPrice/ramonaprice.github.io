@@ -60,6 +60,10 @@ c-events.css
   font-family: sans-serif;
 }
 
+section.card-list {
+  justify-content: center;
+}
+
 /*
 h1 {
   font-family: sans-serif;
