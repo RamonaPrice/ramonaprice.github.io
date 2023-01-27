@@ -36,6 +36,10 @@ span.event-datetime-divider:before {
   text-align: left !important;
 }
 
+time.event-date, .eventitem-meta-address-line {
+  font-size:15px !important;
+}
+
 /*************************************
 c-events.css
 */
@@ -847,15 +851,6 @@ div#main_page_content.page-content.f-1 {
   }
   
   div.f-1.container.container--wide div {
-    color: #3D3D3D;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 24px;
-    margin: 0;
-    outline: currentcolor medium;
-    padding: 0;
-  }
-  
-  div div {
     color: #3D3D3D;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 24px;
