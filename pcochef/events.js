@@ -1,58 +1,56 @@
 (function($, window, document) {
-var app = {
+window.custom_events_app = {
     observer: null,
     init: function() {
         var v = Date.now();
         $("head").append(
             "<link rel='stylesheet' href='https://ramonaprice.github.io/pcochef/events.min.css?v="+v+"' />"
         );
-        $("head").append(
-            '<script type="text/javascript" src="https://pcochef-static.s3.amazonaws.com/plusapi/js/css-events.js"></script>'
-        );
-        $("head").append(
-            '<script src="https://pcochef-static.s3.amazonaws.com/plusapi/js/htmx.min.js" defer="defer"></script>'
-        );
 
-        var elem = document.querySelector("[hx-openurl]");
-        if(elem) this.change_links(elem);
+        this.add_extension();
 
-        $("body").on("htmx:load", function(){
-            console.log("HTMX:load");
-            console.log(this);
-            console.log(document.querySelector("[hx-openurl]"));
-        });
-
-        $("body").on("htmx:afterSwap", function(){
-            console.log("HTMX:load");
-            console.log(this);
-            console.log(document.querySelector("[hx-openurl]"));
-        });
-
-        $("*").on("htmx:load", function(){
-            console.log("ALL HTMX:load");
-            console.log(this);
-            console.log(document.querySelector("[hx-openurl]"));
-        });
-
-        $("*").on("htmx:afterSwap", function(){
-            console.log("ALL HTMX:swap");
-            console.log(this);
-            console.log(document.querySelector("[hx-openurl]"));
+        document.body.addEventListener('htmx:configRequest', function (evt) {
+        
+            console.log(window.location.pathname)
+            console.log(evt.detail.path)
+            evt.detail.path = evt.detail.path + custom_events_app.get_url_vars()
         });
     },
-    change_links: function(elem) {
-        this.observer = new MutationObserver(this.on_html_change);
-        this.observer.observe(elem, {
-            childList: true, // observe direct children
-            subtree: true, // and lower descendants too
+    get_url_vars: function() {
+        var vars = {};
+        var qstring = "";
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
         });
+        for (const [key, value] of Object.entries(vars)) {
+          qstring += "&" + key + "=" + value;
+        }
+        console.log(qstring)
+        return qstring;
     },
-    on_html_change: function(mutation) {
-        console.log(mutation); 
+    add_extension: function() {
+        window.htmx.defineExtension('openurl', {
+            handleSwap : function(swapStyle, target, fragment, settleInfo) {
+        
+            if(swapStyle == "innerHTML") {
+                $(fragment).find("a").each(function() {
+                    var url_base = $(target).attr("hx-openurl");
+                    if(!url_base) console.log("No 'hx-openurl' attribute set.");
+                    var query = this.href.substring(this.href.indexOf("?"));
+                    this.href = url_base +query;
+                });
+                $(target).html(fragment);
+            }
+            else {
+                console.warn("Extension hx-openurl currently does not support an hx-swap"
+                + " of '"+swapStyle+"'\nLinks not changed.");
+            }
+            return [target];
+            }
+        })        
     },
 }
 
     
-app.init();
-    
+window.custom_events_app.init();
 })($, window, document);
