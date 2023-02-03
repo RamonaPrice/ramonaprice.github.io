@@ -62,6 +62,7 @@ window.custom_events_app = {
             if(swapStyle == "innerHTML") {
                 $(fragment).find("a").each(function() {
                     var url_base = $(target).attr("hx-openurl");
+                    var hash = "";
                     if(!url_base) console.log("No 'hx-openurl' attribute set.");
                     var query = this.href.substring(this.href.indexOf("?"));
                     if(!$(target).attr("hx-keeptags")) {
@@ -70,7 +71,10 @@ window.custom_events_app = {
                         const tags_query = /tags=([^&]*)/g;
                         query = query.replace(tags_query, ""); 
                     }
-                    this.href = url_base + query;
+                    if($(target).attr("hx-append")) {
+                        hash = $(target).attr("hx-append");
+                    }
+                    this.href = url_base + query + hash;
                 });
                 $(target).html(fragment);
             }
