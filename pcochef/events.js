@@ -10,7 +10,8 @@
  *    hx-params="*" 
  *    hx-swap="innerHTML" 
  *    hx-ext="openurl" 
- *    hx-openurl="/campus-events/yorkson-events" >
+ *    hx-openurl="/campus-events/yorkson-events" 
+ *    hx-append="#block-3300" >
  *    <img class="htmx-indicator" src="https://htmx.org/img/bars.svg" alt="Result loading..." width="150" />
  * </div>
  * 
@@ -23,6 +24,7 @@
  *                For example, if you set this to "/events" then this will occur:
  *                "/lifetogether?event_id=32923985&tags=life+together" > "/events?event_id=32923985"
  *    hx-keeptags: Add this if you don't want hx-openurl to strip the &tags=... from the URL
+ *    hx-append: Add a hash to the end of the URL to scroll to a specific element. i.e. #block-3300
  */
 
 (function($, window, document) {
@@ -31,7 +33,7 @@ window.custom_events_app = {
     init: function() {
         var v = Date.now();
         $("head").append(
-            "<link rel='stylesheet' href='https://ramonaprice.github.io/pcochef/events.min.css?v="+v+"' />"
+            "<link rel='stylesheet' href='https://dq5pwpg1q8ru0.cloudfront.net/2023/02/03/16/23/48/50ca87cd-798b-47cd-bdb8-bb04f4677d85/events.min.2022-02-03.css' />"
         );
 
         this.add_extension();
